@@ -4,7 +4,8 @@
   "description": "Web Application to extract resume information from url",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,12 @@
   "bugs": {
     "url": "https://github.com/kervin5/resume-parser-api/issues"
   },
-  "homepage": "https://github.com/kervin5/resume-parser-api#readme"
+  "homepage": "https://github.com/kervin5/resume-parser-api#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "simple-resume-parser": "^1.1.3",
+    "winston": "^3.2.1"
+  }
 }
