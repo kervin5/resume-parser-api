@@ -1,0 +1,27 @@
+{
+  "name": "resume-parser-api",
+  "version": "1.0.0",
+  "description": "Web Application to extract resume information from url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kervin5/resume-parser-api.git"
+  },
+  "keywords": [
+    "resume",
+    "parser",
+    "pdf",
+    "doc",
+    "json",
+    "word"
+  ],
+  "author": "kervin5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kervin5/resume-parser-api/issues"
+  },
+  "homepage": "https://github.com/kervin5/resume-parser-api#readme"
+}
