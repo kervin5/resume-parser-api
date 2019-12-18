@@ -16,7 +16,7 @@ router.post("/", async (req, res) => {
     res.send(parsed);
   } catch (err) {
     console.log("ERRRORRRRR");
-    res.statusCode(500).send({ err });
+    res.statusCode(400).send({ err });
   }
 });
 
