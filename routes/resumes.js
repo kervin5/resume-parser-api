@@ -15,6 +15,7 @@ router.post("/", async (req, res) => {
     const parsed = await resume.parseToJSON();
     res.send(parsed);
   } catch (err) {
+    console.log("ERRRORRRRR");
     res.statusCode(500).send({ err });
   }
 });
