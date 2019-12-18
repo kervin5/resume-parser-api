@@ -8,11 +8,15 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { url } = req.body;
-  if (!url) return res.status(400).send("Missing URL");
-  const resume = new ResumeParser(url);
-  const parsed = await resume.parseToJSON();
-  res.send(parsed);
+  try {
+    const { url } = req.body;
+    if (!url) return res.status(400).send("Missing URL");
+    const resume = new ResumeParser(url);
+    const parsed = await resume.parseToJSON();
+    res.send(parsed);
+  } catch (err) {
+    res.statusCode(500).send({ err });
+  }
 });
 
 module.exports = router;
