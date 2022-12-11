@@ -27,7 +27,7 @@
   "homepage": "https://github.com/kervin5/resume-parser-api#readme",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^3.21.2",
     "simple-resume-parser": "^1.1.5",
     "winston": "^3.2.1"
